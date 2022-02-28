@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards API</title>
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <h2 class="text-center">Play With Cards API</h2>
+    <section class="container">
+        <!-- search field  -->
+        <div class="d-flex container">
+            <input id="search-Field" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button onclick="searchCards()" class="btn btn-outline-success" type="search">Search</button>
+        </div>
+        <!-- show error masseges  -->
+        <h3 id="error" class="text-danger text-center"></h3>
+        <!-- show cards  -->
+        <div id="cards-container" class="row g-5 m-5">
+        </div>
+    </section>
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- coustom js  -->
+    <script src="js/cards.js"></script>
+</body>
+
+</html>
